@@ -52,20 +52,21 @@ places = places.map(function(place){
 
 console.log(places);
 
-// var total = 0;
-
-var x = [];
+var max = 0;
 
 places.forEach(function(av){
-//   console.log(av.temp);
+ if(av.temp > max){
+   max = av.temp;
+   
+   var maxObj = {
+     name:av.name,
+     temp:max
+   };
+    console.log(maxObj);
+ }
   
-   x.push(av.temp);
-    
+
    
 });
-
-      console.log(x);
-
-
 
 
