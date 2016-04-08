@@ -53,20 +53,37 @@ places = places.map(function(place){
 console.log(places);
 
 var max = 0;
+var maxObj;
 
 places.forEach(function(av){
  if(av.temp > max){
    max = av.temp;
    
-   var maxObj = {
+    maxObj = {
      name:av.name,
      temp:max
-   };
-    console.log(maxObj);
- }
-  
-
-   
+   }; 
+ }     
 });
+
+       console.log(maxObj,"warmest place");
+
+ 
+var min = 9;
+var minObj; 
+
+  places.forEach(function(ad){
+   if(ad.temp < min){
+   min = ad.temp;
+   
+   minObj = {
+     name:ad.name,
+     temp:min
+   }; 
+ }
+  });
+   
+console.log(minObj, "coldest place");
+
 
 
