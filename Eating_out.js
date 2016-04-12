@@ -42,3 +42,20 @@ newData = data.map(function(r){
 });
 
     console.log(newData);
+
+//finding how much the coach sould pay:
+for (var i =0; i < newData.length; i++){
+ 
+ //console.log(newData[i].junk);
+  //console.log(celtic[i].quantity);
+ 
+   var value1 = newData[i].price;
+  var value2 = celtic[i].quantity;
+  
+  total = value1 * value2;
+//    return{
+//         junkFood:total;
+//         pricePerfood: newData[i].price;
+//    };
+  console.log(total);
+}
