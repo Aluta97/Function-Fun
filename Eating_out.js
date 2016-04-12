@@ -53,9 +53,7 @@ for (var i =0; i < newData.length; i++){
   var value2 = celtic[i].quantity;
   
   total = value1 * value2;
-//    return{
-//         junkFood:total;
-//         pricePerfood: newData[i].price;
-//    };
-  console.log(total);
+    
+ console.log(total);
 }
+ 
